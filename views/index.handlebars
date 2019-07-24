@@ -1,17 +1,17 @@
-<img id="image" src="https://techguided.com/wp-content/uploads/2019/01/Green-Man-Gaming-Logo-1024x252.png"
+<img id="image" src="https://www.greenmangaming.com/blog/wp-content/uploads/2015/12/Green_Man_Gaming_logo_Desktop@x2.png"
     alt="green man gaming logo">
 
-<h1 id="title">PC Games from Green Man Gaming</h1>
+<h1 id="title"> PC Games from Green Man Gaming</h1>
 
 <div id="gameobject">
 
     <ul>
         {{#each gameobject}}
         <li>
-            <h2>{{title}}</h2>
+            <h2 class = "title">{{title}}</h2>
             <img src="{{image}}" />
-            <br>
-            <a href = "{{link}}">{{link}}</a>
+            <p>Click the link for more information!</p>
+            <a class = "link" href = "{{link}}" target = "_blank">{{link}}</a>
             <br><br>
             <button class="button" data-id="{{id}}">Note</button>
         </li>

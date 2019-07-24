@@ -1,6 +1,5 @@
-<div>
-    <img id = "image" src="assets/media/Isekai_Shokudō_logo.png" alt="restaurant to another world logo">
-</div>
+<img id="image" src="https://techguided.com/wp-content/uploads/2019/01/Green-Man-Gaming-Logo-1024x252.png"
+    alt="green man gaming logo">
 
 <h1 id="title">PC Games from Green Man Gaming</h1>
 
@@ -10,41 +9,15 @@
         {{#each gameobject}}
         <li>
             <h2>{{title}}</h2>
-            <img src = "{{image}}" />
+            <img src="{{image}}" />
             <h3>{{link}}</h3>
-            <button id = "notes" data-id ="{{id}}">Note</button>
+            <button class="button" data-id="{{id}}">Note</button>
         </li>
         {{/each}}
     </ul>
-    
-    <div id = "populate">
-
-    </div>
 
 </div>
 
-<div id="eaten">
-    <h2>Burgers that have been devoured</h2>
+<div id="notes">
 
-    <ul>
-        {{#each burgers}}
-        {{#if devoured}}
-        <li>
-            <h2>{{burger_name}}</h2>
-            Devoured.
-        </li>
-        {{/if}}
-        {{/each}}
-    </ul>
-</div>
-<div id="addBurgerForm">
-    <h2>Add a Burger</h2>
-    <form class="create-form">
-        <div class="form-group">
-            <label for="name">Burger Name:</label>
-            <input type="text" id="name" name="burger_name">
-        </div>
-
-        <button type="submit">Add Burger!</button>
-    </form>
 </div>

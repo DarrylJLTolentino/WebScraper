@@ -1,13 +1,20 @@
+body {
+    font-family: 'Bangers', cursive;
+    background-image: url("https://media.giphy.com/media/Q9aBxHn9fTqKs/giphy.gif");
+    color: white;
+    font-size: 30px;
+}
+
 #notes {
     position: fixed;
-    right: 20vw;
-    top: 36vh;
+    right: 15vw;
+    top: 25vh;
 }
 textarea, input {
     display: block;
     width: 100%;
     background-color: #00e105;
-    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 input {
     height: 36px;
@@ -18,8 +25,21 @@ textarea {
     font-size: 18px;
 }
 
+.link {
+    font-size: 23px;
+}
+
+.button {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.button:focus {
+    background-color: red;
+}
+
 #image {
     position: relative;
     left: 50%;
     transform: translatex(-50%);
 }
+

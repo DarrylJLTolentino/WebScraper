@@ -1,4 +1,4 @@
 module.exports = {
-    GameObject: require("./Gameobject"),
+    GameObject: require("./GameObject"),
     Note: require("./Note")
 }

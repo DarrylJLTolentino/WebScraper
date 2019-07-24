@@ -3,7 +3,7 @@ var mongoose = require("mongoose");
 var cheerio = require("cheerio");
 var axios = require("axios");
 
-const PORT = 8080;
+// const PORT = 8080;
 
 var app = express();
 
@@ -111,6 +111,6 @@ app.post("/gameobjects/:id", function(req, res) {
     });
 });
 
-app.listen(PORT, function() {
-    console.log("App running on port " + PORT + "!");
+app.listen(process.env.PORT || 8080, function() {
+    console.log("App running on port " + this.address().port + "!");
 });

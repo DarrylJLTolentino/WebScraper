@@ -1,15 +1,15 @@
 // Grab the articles as a json
-$.getJSON("/gameobjects", function(data) {
-  // For each one
-  for (var i = 0; i < data.length; i++) {
-    // Display the apropos information on the page
-    $("#gameobject").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br /> <img src ='" + data[i].image + "'/> <br />" + data[i].link + "</p>");
-  }
-});
+// $.getJSON("/gameobjects", function(data) {
+//   // For each one
+//   for (var i = 0; i < data.length; i++) {
+//     // Display the apropos information on the page
+//     $("#gameobject").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br /> <img src ='" + data[i].image + "'/> <br />" + data[i].link + "</p>");
+//   }
+// });
 
 
 // Whenever someone clicks a p tag
-$(document).on("click", "p", function() {
+$(document).on("click", ".button", function() {
   // Empty the notes from the note section
   $("#notes").empty();
   // Save the id from the p tag

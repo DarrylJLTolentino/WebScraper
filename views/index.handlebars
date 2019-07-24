@@ -1,5 +1,18 @@
-<img id="image" src="https://www.greenmangaming.com/blog/wp-content/uploads/2015/12/Green_Man_Gaming_logo_Desktop@x2.png"
+<img id="image"
+    src="https://www.greenmangaming.com/blog/wp-content/uploads/2015/12/Green_Man_Gaming_logo_Desktop@x2.png"
     alt="green man gaming logo">
+
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link" href="/">Homepage</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/scrape">Scrape!</a>
+    </li>
+    <li class = "nav-item">
+        <a class = "nav-link" href="/gameobjects">API for Scraped Data</a>
+    </li>
+</ul>
 
 <h1 id="title"> PC Games from Green Man Gaming</h1>
 
@@ -8,12 +21,12 @@
     <ul>
         {{#each gameobject}}
         <li>
-            <h2 class = "title">{{title}}</h2>
+            <h2 class="title">{{title}}</h2>
             <img src="{{image}}" />
             <p>Click the link for more information!</p>
-            <a class = "link" href = "{{link}}" target = "_blank">{{link}}</a>
+            <a class="link" href="{{link}}" target="_blank">{{link}}</a>
             <br><br>
-            <button class="button" data-id="{{id}}">Note</button>
+            <button type = "button" class="button btn btn-primary" data-id="{{id}}">Note</button>
         </li>
         {{/each}}
     </ul>

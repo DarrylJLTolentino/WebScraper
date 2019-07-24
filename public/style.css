@@ -34,12 +34,13 @@ textarea {
 }
 
 .button:focus {
-    background-color: red;
+    background-color: green;
 }
 
 #image {
     position: relative;
     left: 50%;
+    top: 10px;
     transform: translatex(-50%);
 }
 

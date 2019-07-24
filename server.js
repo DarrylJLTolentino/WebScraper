@@ -3,7 +3,7 @@ var mongoose = require("mongoose");
 var cheerio = require("cheerio");
 var axios = require("axios");
 
-// const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 var app = express();
 

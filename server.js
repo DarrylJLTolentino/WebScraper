@@ -19,9 +19,18 @@ app.set("view engine", "handlebars");
 var db = require("./models");
 
 //connecting to MongoDB for Heroku
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+// var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
-mongoose.connect(MONGODB_URI, {useNewUrlParser: true});
+// mongoose.connect(MONGODB_URI, {useNewUrlParser: true});
+
+var databaseUrl = "mongodb://localhost/mongoHeadlines";
+
+if (process.env.MONGODB_URI) {
+  mongoose.connect(process.env.MONGODB_URI);
+}
+else {
+  mongooose.connect(databaseUrl);
+};
 
 app.get("/", function(req, res) {
   db.GameObject.find({})

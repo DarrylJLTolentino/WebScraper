@@ -183,3 +183,32 @@ $(document).on("click", "#savenote", function() {
   $("#bodyinput").val("");
 });
 ```
+
+| Technologies Used | References |
+| ----------------- | ---------- |
+| HTML | https://developer.mozilla.org/en-US/docs/Web/HTML |
+| CSS | https://developer.mozilla.org/en-US/docs/Web/CSS |
+| Bootstrap | https://getbootstrap.com/ |
+| JavaScript | https://developer.mozilla.org/en-US/docs/Web/Javascript |
+| jQuery | https://jquery.com/ |
+| NodeJS | https://nodejs.org/en/ |
+| Express | https://www.npmjs.com/package/express |
+| Mongoose | https://www.npmjs.com/package/mongoose |
+| Cheerio | https://www.npmjs.com/package/cheerio |
+| Axios | https://www.npmjs.com/package/axios |
+| Express Handlebars | https://www.npmjs.com/package/express-handlebars |
+
+######
+
+| Versioning | References |
+| ---------- | ---------- |
+| Github | https://github.com/ |
+
+######
+
+Author
+- Darryl Tolentino
+
+Acknowledgements
+- Jake Dudum, Amber Burroughs, Sajeel Malik - For help with syntax and with the scraping
+

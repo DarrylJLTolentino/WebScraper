@@ -12,10 +12,9 @@
 $(document).on("click", ".button", function() {
   // Empty the notes from the note section
   $("#notes").empty();
-  // Save the id from the p tag
+  // Save the id
   var thisId = $(this).attr("data-id");
 
-  // Now make an ajax call for the Article
   $.ajax({
     method: "GET",
     url: "/gameobjects/" + thisId
